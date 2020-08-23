@@ -1093,7 +1093,8 @@ a {
   background: rgba(0, 0, 0, 0.2);
 }
 
-.modal-overlay .modal-container {
+.modal-overlay .modal-form {
+  display: block;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1107,7 +1108,7 @@ a {
   border-radius: 4px;
 }
 
-.modal-overlay .modal-container .modal-title {
+.modal-overlay .modal-form .modal-title {
   margin: 0;
   padding-top: 40px;
   padding-bottom: 12px;
@@ -1119,17 +1120,13 @@ a {
   text-align: center;
 }
 
-.modal-overlay .modal-form {
-  display: block;
-  padding: 0 40px;
-}
-
 .modal-overlay.is-hidden {
   opacity: 0;
   pointer-events: none;
 }
 
-.modal-overlay.is-hidden .modal-container {
+.modal-overlay.is-hidden .modal-form {
+  display: block;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1143,7 +1140,7 @@ a {
   border-radius: 4px;
 }
 
-.modal-overlay.is-hidden .modal-container .modal-title {
+.modal-overlay.is-hidden .modal-form .modal-title {
   margin: 0;
   padding-top: 40px;
   padding-bottom: 12px;
@@ -1151,11 +1148,6 @@ a {
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
-}
-
-.modal-overlay.is-hidden .modal-form {
-  display: block;
-  padding: 40px;
 }
 
 .form-field {
@@ -1167,7 +1159,9 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 370px;
   padding-bottom: 10px;
 }
 
@@ -1264,12 +1258,14 @@ a {
 }
 
 .checkbox-label .checkbox-icon {
-  display: inline-block;
+  display: block;
   margin-right: 7px;
   width: 16px;
   height: 15px;
   border: 2px solid #212121;
   border-radius: 2px;
+  -webkit-transform: translateX(40px);
+          transform: translateX(40px);
   -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-size 250ms cubic-bezier(0.4, 0, 0.2, 1), background-size 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-size 250ms cubic-bezier(0.4, 0, 0.2, 1), background-size 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1279,6 +1275,8 @@ a {
   font-size: 12px;
   line-height: 1.16;
   color: #757575;
+  -webkit-transform: translateX(40px);
+          transform: translateX(40px);
 }
 
 .checkbox-label .checkbox-title .checkbox-policy {
