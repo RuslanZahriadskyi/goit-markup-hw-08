@@ -37,11 +37,11 @@
 		}
 	}
 
-	& .modal-form {
-		display: block;
-		box-sizing: border-box;
-		width: 100%;
-	}
+	// & .modal-form {
+	// 	display: block;
+	// 	box-sizing: border-box;
+	// 	width: 100%;
+	// }
 }
 
 .modal-overlay.is-hidden {
@@ -72,6 +72,10 @@
 			font-size: 20px;
 			line-height: 1.15;
 			text-align: center;
+		}
+
+		@media screen and (min-width: 479px) {
+			width: 450px;
 		}
 	}
 }
