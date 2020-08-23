@@ -1,0 +1,32 @@
+%logo {
+	font-family: Raleway, sans-serif;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.2;
+	outline: none;
+}
+
+%button-standart {
+	width: 200px;
+	height: 50px;
+	color: $primary-bg-color;
+	background-color: $acent-color;
+	border-radius: 4px;
+	border: 0px;
+	cursor: pointer;
+
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 1.88;
+	letter-spacing: 0.06em;
+	outline: none;
+}
+
+%section-title {
+	margin-top: 0;
+	margin-bottom: 50px;
+	font-weight: bold;
+	font-size: 26px;
+	line-height: 1.2;
+	text-align: center;
+}

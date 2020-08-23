@@ -1,0 +1,64 @@
+.logo-footer {
+	@media screen and (max-width: 767px) {
+		display: block;
+		padding-top: 60px;
+		margin-bottom: 20px;
+
+		font-family: Raleway, sans-serif;
+		font-weight: bold;
+		font-size: 24px;
+		line-height: 1.16;
+		outline: none;
+		text-align: center;
+		color: $primary-bg-color;
+
+		& .logo-span {
+			color: $acent-color;
+		}
+	}
+	// @extend %logo;
+	// display: inline-block;
+}
+
+.full-address {
+	@media screen and (max-width: 767px) {
+		width: 231px;
+		height: 81px;
+		margin-right: auto;
+		margin-left: auto;
+
+		& .address {
+			display: block;
+			margin-top: 0px;
+			margin-bottom: 8px;
+
+			color: $primary-bg-color;
+			font-size: 14px;
+			line-height: 1.7;
+			font-style: normal;
+		}
+
+		& .footer-link {
+			display: block;
+			color: rgba(255, 255, 255, 0.6);
+			margin-bottom: 9px;
+
+			font-size: 14px;
+			line-height: 1.7;
+			font-style: normal;
+			text-align: center;
+
+			transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+			&:hover,
+			&:focus {
+				color: $acent-color;
+				outline: none;
+			}
+		}
+	}
+}

@@ -1,0 +1,54 @@
+.section.tasks {
+	@media screen and (max-width: 1200px) {
+		display: none;
+	}
+}
+
+.section-title-tasks {
+	@extend %section-title;
+}
+
+.section.list.uttilities {
+	@include displayFlex;
+
+	& .item-tasks {
+		position: relative;
+		width: calc((1170px - 60px) / 3);
+		margin-right: 30px;
+
+		&:last-child {
+			margin-right: 0px;
+		}
+
+		& .uttilities-img {
+			display: block;
+		}
+	}
+}
+
+.uttilities-titles {
+	position: absolute;
+	width: 370px;
+	height: 70px;
+	bottom: 0;
+
+	background: rgba(47, 48, 58, 0.8);
+
+	& .section-uttilities {
+		@include displayFlex;
+		margin-top: 0;
+		margin-bottom: 0;
+		width: 100%;
+		height: 100%;
+		align-items: center;
+		justify-content: center;
+
+		color: $primary-bg-color;
+
+		font-weight: bold;
+		font-size: 14px;
+		line-height: 1.2;
+		text-align: center;
+		text-transform: uppercase;
+	}
+}

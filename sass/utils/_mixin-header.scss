@@ -1,0 +1,26 @@
+@mixin NavigationLink($color) {
+	position: relative;
+
+	display: flex;
+	padding-top: 31px;
+	padding-bottom: 31px;
+
+	color: $color;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.2;
+	letter-spacing: 0.02em;
+
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@mixin logoSpan($color) {
+	color: $color;
+}
+
+@mixin headerSolid($px, $color) {
+	border: $px solid $color;
+	border-left: none;
+	border-right: none;
+	border-top: none;
+}

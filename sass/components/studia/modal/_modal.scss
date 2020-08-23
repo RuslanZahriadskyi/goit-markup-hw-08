@@ -1,0 +1,155 @@
+.modal-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+
+	background: rgba(0, 0, 0, 0.2);
+
+	& .modal-container {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+
+		width: 450px;
+		height: 609px;
+		background-color: #ffffff;
+
+		box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+		border-radius: 4px;
+
+		& .modal-title {
+			margin: 0;
+
+			padding-top: 40px;
+			padding-bottom: 12px;
+			padding-left: 40px;
+			padding-right: 40px;
+			font-weight: bold;
+			font-size: 20px;
+			line-height: 1.5;
+			text-align: center;
+		}
+	}
+
+	& .modal-form {
+		display: block;
+		padding: 0 40px;
+	}
+}
+
+.modal-overlay.is-hidden {
+	opacity: 0;
+	pointer-events: none;
+
+	& .modal-container {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+
+		width: 450px;
+		height: 609px;
+		background-color: #ffffff;
+
+		box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+		border-radius: 4px;
+
+		& .modal-title {
+			margin: 0;
+
+			padding-top: 40px;
+			padding-bottom: 12px;
+			font-weight: bold;
+			font-size: 20px;
+			line-height: 1.15;
+			text-align: center;
+		}
+	}
+
+	& .modal-form {
+		display: block;
+		padding: 40px;
+	}
+}
+
+.form-field {
+	position: relative;
+	display: flex;
+
+	flex-direction: column;
+	width: 100%;
+
+	padding-bottom: 10px;
+
+	&:nth-last-child(4) {
+		padding-bottom: 20px;
+	}
+
+	& .form-field-title {
+		font-weight: normal;
+		font-size: 12px;
+		line-height: 1.167;
+		letter-spacing: 0.01em;
+
+		padding-bottom: 4px;
+		color: $secondary-text-color;
+	}
+
+	& .modal-input {
+		height: 40px;
+
+		padding: 12px 0px 12px 40px;
+
+		border: 1px solid rgba(33, 33, 33, 0.2);
+		box-sizing: border-box;
+		border-radius: 4px;
+
+		transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+		&:hover,
+		&:focus {
+			border: 1px solid $acent-color;
+			outline: none;
+		}
+
+		&:hover + .modal-svg,
+		&:focus + .modal-svg {
+			fill: $acent-color;
+		}
+	}
+
+	& .modal-svg {
+		@include svg(18px, 18px);
+		position: absolute;
+		top: 29px;
+		left: 12px;
+	}
+}
+
+.form-field {
+	& .comment {
+		padding: 12px 16px;
+		height: 120px;
+		resize: none;
+
+		border: 1px solid rgba(33, 33, 33, 0.2);
+		box-sizing: border-box;
+		border-radius: 4px;
+
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 1.14;
+		letter-spacing: 0.01em;
+
+		color: rgba(117, 117, 117, 0.5);
+
+		&.comment:hover,
+		&.comment:focus {
+			border: 1px solid $acent-color;
+			outline: none;
+		}
+	}
+}

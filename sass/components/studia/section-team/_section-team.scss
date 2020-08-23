@@ -1,0 +1,130 @@
+.section-team {
+	padding: 60px 0 60px 0;
+	background-color: $secondary-bg-color;
+
+	& .section-title-team {
+		margin-top: 0;
+		margin-bottom: 30px;
+		font-weight: bold;
+		font-size: 26px;
+		line-height: 1.2;
+		text-align: center;
+	}
+	@media screen and (max-width: 767px) {
+	}
+
+	& .section-title-team {
+		@extend %section-title;
+	}
+}
+
+.section.list {
+	// @include displayFlex;
+
+	& .item-team {
+		display: block;
+		margin-bottom: 30px;
+
+		width: 100%;
+
+		border-radius: 0px 0px 4px 4px;
+		box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+		background-color: $primary-bg-color;
+		// @media screen and (max-width: 767px) {
+		// }
+
+		// width: calc((1170px - 90px) / 4);
+		// margin-right: 30px;
+		// background-color: $primary-bg-color;
+
+		// &:last-child {
+		// 	margin-right: 0;
+		// }
+	}
+
+	& .team-name {
+		margin-top: 30px;
+		margin-bottom: 10px;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 1.2;
+		text-align: center;
+
+		// @media screen and (max-width: 767px) {
+		// }
+	}
+
+	& .team-foto {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+
+	& .team-profession {
+		margin-top: 0;
+		margin-bottom: 16px;
+		color: $secondary-text-color;
+
+		font-size: 16px;
+		line-height: 1.2;
+		text-align: center;
+		@media screen and (max-width: 767px) {
+		}
+	}
+}
+
+.links.list {
+	@include displayFlex;
+	justify-content: center;
+
+	& .item-links {
+		display: block;
+		margin-right: 10px;
+		margin-bottom: 24px;
+
+		&:last-child {
+			margin-right: 0px;
+		}
+	}
+	@media screen and (max-width: 767px) {
+	}
+}
+
+.social-links {
+	@include displayFlex;
+	width: 44px;
+	height: 44px;
+	align-items: center;
+	justify-content: center;
+	color: #afb1b8;
+	border-radius: 50%;
+
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+		border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+	&:hover,
+	&:focus {
+		border-radius: 50%;
+		background-color: $acent-color;
+		outline: none;
+		color: #ffffff;
+	}
+
+	& .instagram,
+	& .linkedin {
+		@include svg(20px, 20px);
+		fill: currentColor;
+	}
+
+	& .twitter {
+		@include svg(20px, 16.25px);
+		fill: currentColor;
+	}
+
+	& .facebook {
+		@include svg(20px, 40px);
+		fill: currentColor;
+	}
+	@media screen and (max-width: 767px) {
+	}
+}

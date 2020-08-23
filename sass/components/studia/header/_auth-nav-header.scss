@@ -1,0 +1,50 @@
+.auth-nav {
+	text-align: center;
+	& .item {
+		margin-bottom: 16px;
+
+		&:last-child {
+			margin-bottom: 60px;
+		}
+
+		& .link {
+			color: $secondary-text-color;
+			font-weight: 500;
+			font-size: 18px;
+			line-height: 1.2;
+			letter-spacing: 0.02em;
+
+			transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+		}
+	}
+
+	& .link:hover,
+	.link:focus {
+		color: $acent-color;
+	}
+
+	@media screen and (min-width: 767px) {
+	}
+
+	// & .item + .item {
+	// 	// margin-left: 50px;
+	// }
+
+	// & .link {
+	// 	@include NavigationLink($secondary-text-color);
+
+	// 	padding: 0;
+	// 	text-align: center;
+	// 	// @media screen and (min-width: 767px) {
+
+	// 	// }
+	// }
+}
+
+.e-mail {
+	@include SvgHeader(16px, 17.2px);
+}
+
+.smartphone {
+	@include SvgHeader(20px, 15px);
+}
