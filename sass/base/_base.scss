@@ -33,6 +33,10 @@ a {
 		width: 450px;
 	}
 
+	@media screen and (min-width: 767px) {
+		width: 738px;
+	}
+
 	// @media screen and (min-width: 1169px) {
 	// 	margin-left: auto;
 	// 	margin-right: auto;

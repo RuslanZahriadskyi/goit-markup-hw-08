@@ -24,7 +24,10 @@
 	// 	padding-top: 94px;
 	// }
 
-	// & .section.list {
-	// 	@include displayFlex;
-	// }
+	@media screen and (min-width: 767px) {
+		& .section.list {
+			@include displayFlex;
+			flex-wrap: wrap;
+		}
+	}
 }

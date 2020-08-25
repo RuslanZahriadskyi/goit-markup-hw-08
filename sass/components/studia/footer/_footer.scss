@@ -1,9 +1,16 @@
-.footer {
+.footer__footer {
 	background-color: $bg-color-footer;
-	height: 603px;
+	padding: 60px 0;
+	height: auto;
+	// height: 603px;
 
-	& .container.footer {
-		// display: flex;
-		// height: 252px;
+	@media screen and (min-width: 768px) {
+		& .container.footer {
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			// align-items: baseline;
+			// height: 252px;
+		}
 	}
 }

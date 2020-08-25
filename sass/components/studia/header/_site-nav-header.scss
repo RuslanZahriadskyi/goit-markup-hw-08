@@ -1,7 +1,4 @@
 .site-nav.list {
-	padding: 60px 0;
-	text-align: center;
-
 	& .item {
 		margin-bottom: 52px;
 
@@ -21,12 +18,33 @@
 			margin-bottom: 0px;
 		}
 	}
+	@media screen and (max-width: 767px) {
+		padding: 60px 0;
+		text-align: center;
+	}
+
+	@media screen and (min-width: 767px) {
+		display: flex;
+		align-items: center;
+		// margin-right: 84px;
+
+		& .item {
+			margin: 0;
+
+			& .link {
+				display: block;
+				padding: 32px 0;
+
+				font-size: 14px;
+			}
+		}
+
+		& .item + .item {
+			margin-left: 50px;
+		}
+	}
 
 	// display: flex;
-
-	// & .item + .item {
-	// 	margin-left: 50px;
-	// }
 
 	// & .link:hover,
 	// .link:focus {
