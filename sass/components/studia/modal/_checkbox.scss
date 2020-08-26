@@ -2,9 +2,10 @@
 	position: absolute;
 
 	display: inline-flex;
-	align-items: center;
-	margin-right: auto;
-	margin-left: auto;
+
+	@media screen and (min-width: 1170px) {
+		margin-left: 12px;
+	}
 
 	& .checkbox {
 		width: 1px;
@@ -47,6 +48,10 @@
 		& .checkbox-policy {
 			color: $acent-color;
 			text-decoration: underline;
+		}
+
+		@media screen and (min-width: 1170px) {
+			font-size: 14px;
 		}
 	}
 }

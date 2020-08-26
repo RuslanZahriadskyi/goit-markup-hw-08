@@ -29,12 +29,17 @@ a {
 	padding-left: 15px;
 	padding-right: 15px;
 
-	@media screen and (min-width: 479px) {
+	@media screen and (min-width: 479px) and (max-width: 767px) {
 		width: 450px;
 	}
 
-	@media screen and (min-width: 767px) {
+	@media screen and (min-width: 768px) and (max-width: 1169px) {
 		width: 738px;
+		height: auto;
+	}
+
+	@media screen and (min-width: 1170px) {
+		width: 1170px;
 	}
 
 	// @media screen and (min-width: 1169px) {
@@ -48,9 +53,9 @@ a {
 
 .section {
 	padding-bottom: 60px;
-	@media screen and (max-width: 767px) {
+	@media screen and (min-width: 1169px) {
+		padding-bottom: 94px;
 	}
-	// padding-bottom: 94px;
 }
 
 .list {

@@ -31,6 +31,7 @@
 		& .item {
 			display: flex;
 			align-items: center;
+			flex-wrap: wrap;
 			margin: 0;
 
 			& .link {
@@ -45,19 +46,20 @@
 		}
 	}
 
-	// & .item + .item {
-	// 	// margin-left: 50px;
-	// }
+	@media screen and (min-width: 1170px) {
+		display: flex;
+		margin: 0;
+		& .item {
+			& .link {
+				font-size: 14px;
+			}
+		}
 
-	// & .link {
-	// 	@include NavigationLink($secondary-text-color);
-
-	// 	padding: 0;
-	// 	text-align: center;
-	// 	// @media screen and (min-width: 767px) {
-
-	// 	// }
-	// }
+		& .item + .item {
+			margin: 0;
+			margin-left: 30px;
+		}
+	}
 }
 
 .e-mail {

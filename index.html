@@ -3,6 +3,10 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="Ефективные решения бизнеса, заказать услугу, десктопные приложения, мобильные приложения, дизайнерские решения"
+		/>
 		<title>Web Studio</title>
 		<link rel="stylesheet" href="./css/main.min.css" />
 	</head>
@@ -12,7 +16,7 @@
 			<!-- Header -->
 			<div class="container">
 				<nav class="flex-header">
-					<a href="" class="logo-header">
+					<a href="" class="logo-header" aria-label="Главная страница">
 						<span class="logo-nav">Web</span>
 						Studio
 					</a>
@@ -20,7 +24,8 @@
 						type="button"
 						class="button-mobile-menu"
 						aria-expanded="false"
-						aria-controls="navigation"
+						aria-controls="navigations"
+						aria-label="Мобильное меню"
 						data-menu-button
 					>
 						<svg width="40px" height="40px">
@@ -28,20 +33,20 @@
 							<use class="icon-cross" href="./images/sprite.svg#icon-cross"></use>
 						</svg>
 					</button>
-					<div class="navigation" data-menu>
+					<div class="navigation" id="navigations" data-menu>
 						<ul class="site-nav list">
 							<li class="item">
-								<a href="./index.html" class="link current">Студия</a>
+								<a href="./index.html" aria-label="Переход на главную" class="link current">Студия</a>
 							</li>
 							<li class="item">
-								<a href="./portfolio.html" class="link">Портфолио</a>
+								<a href="./portfolio.html" aria-label="Переход на портфолио" class="link">Портфолио</a>
 							</li>
-							<li class="item"><a href="" class="link">Контакты</a></li>
+							<li class="item"><a href="" aria-label="Переход в контакты" class="link">Контакты</a></li>
 						</ul>
 
 						<ul class="auth-nav list">
 							<li class="item">
-								<a href="mailto:info@devstudio.com" class="link">
+								<a href="mailto:info@devstudio.com" class="link" aria-label="Ссылка позвонить">
 									<svg class="e-mail">
 										<use href="./images/sprite.svg#icon-e-mail"></use>
 									</svg>
@@ -49,7 +54,7 @@
 								</a>
 							</li>
 							<li class="item">
-								<a href="tel:+380961111111" class="link">
+								<a href="tel:+380961111111" class="link" aria-label="Выслать почту">
 									<svg class="smartphone">
 										<use href="./images/sprite.svg#icon-kontakt"></use>
 									</svg>
@@ -88,7 +93,7 @@
 									<use href="./images/sprite.svg#icon-antenna"></use>
 								</svg>
 							</div>
-							<h3 class="section-paragraph">Внимание к деталям</h3>
+							<h2 class="section-paragraph">Внимание к деталям</h2>
 							<p class="section-content">
 								Идейные соображения, а также начало повседневной работы по формированию позиции.
 							</p>
@@ -100,7 +105,7 @@
 									<use href="./images/sprite.svg#icon-clock"></use>
 								</svg>
 							</div>
-							<h3 class="section-paragraph">Пунктуальность</h3>
+							<h2 class="section-paragraph">Пунктуальность</h2>
 							<p class="section-content">
 								Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
 							</p>
@@ -112,7 +117,7 @@
 									<use href="./images/sprite.svg#icon-diagram"></use>
 								</svg>
 							</div>
-							<h3 class="section-paragraph">Планирование</h3>
+							<h2 class="section-paragraph">Планирование</h2>
 							<p class="section-content">
 								Равным образом консультация с широким активом в значительной степени обуславливает.
 							</p>
@@ -139,37 +144,87 @@
 					<h2 class="section-title-tasks">Чем мы занимаемся</h2>
 					<ul class="section list uttilities">
 						<li class="item-tasks">
-							<img
-								class="uttilities-img"
-								src="./images/content/whatwedo/applications.jpg"
-								alt=""
-								width="370"
-								height="294"
-							/>
+							<picture>
+								<source
+									srcset="
+										./images/content/whatwedo/applications.webp    1x,
+										./images/content/whatwedo/applications@2x.webp 2x,
+										./images/content/whatwedo/applications@3x.webp 3x
+									"
+									type="images/webp"
+									media="(min-width: 1170px)"
+								/>
+								<img
+									class="uttilities-img"
+									srcset="
+										./images/content/whatwedo/applications.jpg    1x,
+										./images/content/whatwedo/applications@2x.jpg 2x,
+										./images/content/whatwedo/applications@3x.jpg 3x
+									"
+									src="./images/content/whatwedo/applications.jpg"
+									alt="Картинка десктопные приложения"
+									width="370"
+									height="294"
+								/>
+							</picture>
+
 							<div class="uttilities-titles">
 								<p class="section-uttilities">Десктопные приложения</p>
 							</div>
 						</li>
 						<li class="item-tasks">
-							<img
-								class="uttilities-img"
-								src="./images/content/whatwedo/mobileapplications.jpg"
-								alt=""
-								width="370"
-								height="294"
-							/>
+							<picture>
+								<source
+									srcset="
+										./images/content/whatwedo/mobileapplications.webp    1x,
+										./images/content/whatwedo/mobileapplications@2x.webp 2x,
+										./images/content/whatwedo/mobileapplications@3x.webp 3x
+									"
+									type="images/webp"
+									media="(min-width: 1170px)"
+								/>
+								<img
+									class="uttilities-img"
+									srcset="
+										./images/content/whatwedo/mobileapplications.jpg    1x,
+										./images/content/whatwedo/mobileapplications@2x.jpg 2x,
+										./images/content/whatwedo/mobileapplications@3x.jpg 3x
+									"
+									src="./images/content/whatwedo/mobileapplications.jpg"
+									alt="Картинка мобильные приложения"
+									width="370"
+									height="294"
+								/>
+							</picture>
 							<div class="uttilities-titles">
 								<p class="section-uttilities">Мобильные приложения</p>
 							</div>
 						</li>
 						<li class="item-tasks">
-							<img
-								class="uttilities-img"
-								src="./images/content/whatwedo/disignsolutions.jpg"
-								alt=""
-								width="370"
-								height="294"
-							/>
+							<picture>
+								<source
+									srcset="
+										./images/content/whatwedo/disignsolutions.webp    1x,
+										./images/content/whatwedo/disignsolutions@2x.webp 2x,
+										./images/content/whatwedo/disignsolutions@3x.webp 3x
+									"
+									type="images/webp"
+									media="(min-width: 1170px)"
+								/>
+								<img
+									class="uttilities-img"
+									srcset="
+										./images/content/whatwedo/disignsolutions.jpg    1x,
+										./images/content/whatwedo/disignsolutions@2x.jpg 2x,
+										./images/content/whatwedo/disignsolutions@3x.jpg 3x
+									"
+									src="./images/content/whatwedo/disignsolutions.jpg"
+									alt="Картинка дизайнерские решения"
+									width="370"
+									height="294"
+								/>
+							</picture>
+
 							<div class="uttilities-titles">
 								<p class="section-uttilities">Дизайнерские решения</p>
 							</div>
@@ -188,9 +243,7 @@
 								<source
 									srcset="
 										./images/team/igordemianenko/mobile/igordemianenkowebp.webp    1x,
-										./images/team/igordemianenko/mobile/igordemianenkowebp@2x.webp 2x,
-										./images/team/igordemianenko/mobile/igordemianenkowebp@3x.webp 3x,
-
+										./images/team/igordemianenko/mobile/igordemianenkowebp@2x.webp 2x
 									"
 									type="image/webp"
 									media="(max-width: 767px)"
@@ -203,7 +256,7 @@
 										./images/team/igordemianenko/tablet/igordemianenko@3x.webp 3x
 									"
 									type="image/webp"
-									media="(min-width: 768px)"
+									media="(max-width: 768px)"
 								/>
 
 								<source
@@ -212,16 +265,33 @@
 										./images/team/igordemianenko/tablet/igordemianenko@2x.jpg 2x,
 										./images/team/igordemianenko/tablet/igordemianenko@3x.jpg 3x
 									"
-									media="(min-width: 768px)"
+									media="(max-width: 768px)"
+								/>
+
+								<source
+									srcset="
+										./images/team/igordemianenko/laptop/igordemianenko.webp    1x,
+										./images/team/igordemianenko/laptop/igordemianenko@2x.webp 2x,
+										./images/team/igordemianenko/laptop/igordemianenko@3x.webp 3x
+									"
+									type="image/webp"
+									media="(min-width: 1170px)"
+								/>
+
+								<source
+									srcset="
+										./images/team/igordemianenko/laptop/igordemianenko.jpg    1x,
+										./images/team/igordemianenko/laptop/igordemianenko@2x.jpg 2x,
+										./images/team/igordemianenko/laptop/igordemianenko@3x.jpg 3x
+									"
+									media="(min-width: 1170px)"
 								/>
 
 								<img
 									class="team-foto"
 									srcset="
 										./images/team/igordemianenko/mobile/igordemianenkojpg.jpg    1x,
-										./images/team/igordemianenko/mobile/igordemianenkojpg@2x.jpg 2x,
-										./images/team/igordemianenko/mobile/igordemianenkojpg@3x.jpg 3x,
-
+										./images/team/igordemianenko/mobile/igordemianenkojpg@2x.jpg 2x
 									"
 									src="./images/team/igordemianenko/mobile/igordemianenkojpg.jpg"
 									alt="Фотография сотрудника Игоря Демьяненко"
@@ -233,28 +303,28 @@
 							<p class="team-profession">Product Designer</p>
 							<ul class="links list">
 								<li class="item-links">
-									<a href="https://instagram.com/" class="social-links">
+									<a href="https://instagram.com/" class="social-links" aria-label="Ссылка инстаграмм">
 										<svg class="instagram">
 											<use href="./images/sprite.svg#icon-instagram"></use>
 										</svg>
 									</a>
 								</li>
 								<li class="item-links">
-									<a href="https://twitter.com/" class="social-links">
+									<a href="https://twitter.com/" class="social-links" aria-label="Ссылка твиттер">
 										<svg class="twitter">
 											<use href="./images/sprite.svg#icon-twitter"></use>
 										</svg>
 									</a>
 								</li>
 								<li class="item-links">
-									<a href="https://facebook.com/" class="social-links">
+									<a href="https://facebook.com/" class="social-links" aria-label="Ссылка фейсбук">
 										<svg class="facebook">
 											<use href="./images/sprite.svg#icon-facebook"></use>
 										</svg>
 									</a>
 								</li>
 								<li class="item-links">
-									<a href="https://linkedin.com/" class="social-links">
+									<a href="https://linkedin.com/" class="social-links" aria-label="Ссылка линкедин">
 										<svg class="linkedin">
 											<use href="./images/sprite.svg#icon-linkedin"></use>
 										</svg>
@@ -267,9 +337,7 @@
 								<source
 									srcset="
 										./images/team/olgarepina/mobile/olgarepinawebp.webp    1x,
-										./images/team/olgarepina/mobile/olgarepinawebp@2x.webp 2x,
-										./images/team/olgarepina/mobile/olgarepinawebp@3x.webp 3x,
-
+										./images/team/olgarepina/mobile/olgarepinawebp@2x.webp 2x
 									"
 									type="image/webp"
 									media="(max-width: 767px)"
@@ -281,7 +349,7 @@
 										./images/team/olgarepina/tablet/olgarepina@3x.webp 3x
 									"
 									type="image/webp"
-									media="(min-width: 768px)"
+									media="(max-width: 768px)"
 								/>
 								<source
 									srcset="
@@ -289,19 +357,34 @@
 										./images/team/olgarepina/tablet/olgarepina@2x.jpg 2x,
 										./images/team/olgarepina/tablet/olgarepina@3x.jpg 3x
 									"
-									media="(min-width: 768px)"
+									media="(max-width: 768px)"
+								/>
+								<source
+									srcset="
+										./images/team/olgarepina/laptop/olgarepina.webp    1x,
+										./images/team/olgarepina/laptop/olgarepina@2x.webp 2x,
+										./images/team/olgarepina/laptop/olgarepina@3x.webp 3x
+									"
+									type="image/webp"
+									media="(min-width: 1170px)"
+								/>
+								<source
+									srcset="
+										./images/team/olgarepina/laptop/olgarepina.jpg    1x,
+										./images/team/olgarepina/laptop/olgarepina@2x.jpg 2x,
+										./images/team/olgarepina/laptop/olgarepina@3x.jpg 3x
+									"
+									media="(min-width: 1170px)"
 								/>
 								<img
 									class="team-foto"
 									srcset="
 										./images/team/olgarepina/mobile/olgarepinajpg.jpg    1x,
-										./images/team/olgarepina/mobile/olgarepinajpg@2x.jpg 2x,
-										./images/team/olgarepina/mobile/olgarepinajpg@3x.jpg 3x,
-
+										./images/team/olgarepina/mobile/olgarepinajpg@2x.jpg 2x
 									"
 									src="./images/team/olgarepina/mobile/olgarepinajpg.jpg"
-									alt="Фотография сотрудника Игоря Демьяненко"
-									aria-label="Фотография сотрудника Игоря Демьяненко"
+									alt="Фотография сотрудника Ольги Репиной"
+									aria-label="Фотография сотрудника Ольги Репиной"
 									width="450"
 								/>
 							</picture>
@@ -309,28 +392,28 @@
 							<p class="team-profession">Frontend Developer</p>
 							<ul class="links list">
 								<li class="item-links">
-									<a href="https://instagram.com/" class="social-links">
+									<a href="https://instagram.com/" class="social-links" aria-label="Ссылка инстаграмм">
 										<svg class="instagram">
 											<use href="./images/sprite.svg#icon-instagram"></use>
 										</svg>
 									</a>
 								</li>
 								<li class="item-links">
-									<a href="https://twitter.com/" class="social-links">
+									<a href="https://twitter.com/" class="social-links" aria-label="Ссылка твиттер">
 										<svg class="twitter">
 											<use href="./images/sprite.svg#icon-twitter"></use>
 										</svg>
 									</a>
 								</li>
 								<li class="item-links">
-									<a href="https://facebook.com/" class="social-links">
+									<a href="https://facebook.com/" class="social-links" aria-label="Ссылка фейсбук">
 										<svg class="facebook">
 											<use href="./images/sprite.svg#icon-facebook"></use>
 										</svg>
 									</a>
 								</li>
 								<li class="item-links">
-									<a href="https://linkedin.com/" class="social-links">
+									<a href="https://linkedin.com/" class="social-links" aria-label="Ссылка линкедин">
 										<svg class="linkedin">
 											<use href="./images/sprite.svg#icon-linkedin"></use>
 										</svg>
@@ -343,9 +426,7 @@
 								<source
 									srcset="
 										./images/team/nikolaitarasov/mobile/nikolaitarasovwebp.webp    1x,
-										./images/team/nikolaitarasov/mobile/nikolaitarasovwebp@2x.webp 2x,
-										./images/team/nikolaitarasov/mobile/nikolaitarasovwebp@3x.webp 3x,
-
+										./images/team/nikolaitarasov/mobile/nikolaitarasovwebp@2x.webp 2x
 									"
 									type="image/webp"
 									media="(max-width: 767px)"
@@ -357,7 +438,7 @@
 										./images/team/nikolaitarasov/tablet/nikolaitarasov@3x.webp 3x
 									"
 									type="image/webp"
-									media="(min-width: 768px)"
+									media="(max-width: 768px)"
 								/>
 								<source
 									srcset="
@@ -365,19 +446,34 @@
 										./images/team/nikolaitarasov/tablet/nikolaitarasov@2x.jpg 2x,
 										./images/team/nikolaitarasov/tablet/nikolaitarasov@3x.jpg 3x
 									"
-									media="(min-width: 768px)"
+									media="(max-width: 768px)"
+								/>
+								<source
+									srcset="
+										./images/team/nikolaitarasov/laptop/nikolaitarasov.webp    1x,
+										./images/team/nikolaitarasov/laptop/nikolaitarasov@2x.webp 2x,
+										./images/team/nikolaitarasov/laptop/nikolaitarasov@3x.webp 3x
+									"
+									type="image/webp"
+									media="(min-width: 1170px)"
+								/>
+								<source
+									srcset="
+										./images/team/nikolaitarasov/laptop/nikolaitarasov.jpg    1x,
+										./images/team/nikolaitarasov/laptop/nikolaitarasov@2x.jpg 2x,
+										./images/team/nikolaitarasov/laptop/nikolaitarasov@3x.jpg 3x
+									"
+									media="(min-width: 1170px)"
 								/>
 								<img
 									class="team-foto"
 									srcset="
 										./images/team/nikolaitarasov/mobile/nikolaitarasovjpg.jpg    1x,
-										./images/team/nikolaitarasov/mobile/nikolaitarasovjpg@2x.jpg 2x,
-										./images/team/nikolaitarasov/mobile/nikolaitarasovjpg@3x.jpg 3x,
-
+										./images/team/nikolaitarasov/mobile/nikolaitarasovjpg@2x.jpg 2x
 									"
 									src="./images/team/nikolaitarasov/mobile/nikolaitarasovjpg.jpg"
-									alt="Фотография сотрудника Игоря Демьяненко"
-									aria-label="Фотография сотрудника Игоря Демьяненко"
+									alt="Фотография сотрудника Николая Тарасова"
+									aria-label="Фотография сотрудника Николая Тарасова"
 									width="450"
 								/>
 							</picture>
@@ -385,28 +481,28 @@
 							<p class="team-profession">Marketing</p>
 							<ul class="links list">
 								<li class="item-links">
-									<a href="https://instagram.com/" class="social-links">
+									<a href="https://instagram.com/" class="social-links" aria-label="Ссылка инстаграмм">
 										<svg class="instagram">
 											<use href="./images/sprite.svg#icon-instagram"></use>
 										</svg>
 									</a>
 								</li>
 								<li class="item-links">
-									<a href="https://twitter.com/" class="social-links">
+									<a href="https://twitter.com/" class="social-links" aria-label="Ссылка твиттер">
 										<svg class="twitter">
 											<use href="./images/sprite.svg#icon-twitter"></use>
 										</svg>
 									</a>
 								</li>
 								<li class="item-links">
-									<a href="https://facebook.com/" class="social-links">
+									<a href="https://facebook.com/" class="social-links" aria-label="Ссылка фейсбук">
 										<svg class="facebook">
 											<use href="./images/sprite.svg#icon-facebook"></use>
 										</svg>
 									</a>
 								</li>
 								<li class="item-links">
-									<a href="https://linkedin.com/" class="social-links">
+									<a href="https://linkedin.com/" class="social-links" aria-label="Ссылка линкедин">
 										<svg class="linkedin">
 											<use href="./images/sprite.svg#icon-linkedin"></use>
 										</svg>
@@ -419,9 +515,7 @@
 								<source
 									srcset="
 										./images/team/michailermakow/mobile/michailermakowwebp.webp    1x,
-										./images/team/michailermakow/mobile/michailermakowwebp@2x.webp 2x,
-										./images/team/michailermakow/mobile/michailermakowwebp@3x.webp 3x,
-
+										./images/team/michailermakow/mobile/michailermakowwebp@2x.webp 2x
 									"
 									type="image/webp"
 									media="(max-width: 767px)"
@@ -433,7 +527,7 @@
 										./images/team/michailermakow/tablet/michailermakow@3x.webp 3x
 									"
 									type="image/webp"
-									media="(min-width: 768px)"
+									media="(max-width: 768px)"
 								/>
 								<source
 									srcset="
@@ -442,20 +536,35 @@
 										./images/team/michailermakow/tablet/michailermakow@3x.jpg 3x
 									"
 									type="image/webp"
-									media="(min-width: 768px)"
+									media="(max-width: 768px)"
+								/>
+								<source
+									srcset="
+										./images/team/michailermakow/laptop/michailermakow.webp    1x,
+										./images/team/michailermakow/laptop/michailermakow@2x.webp 2x,
+										./images/team/michailermakow/laptop/michailermakow@3x.webp 3x
+									"
+									type="image/webp"
+									media="(min-width: 1170px)"
+								/>
+								<source
+									srcset="
+										./images/team/michailermakow/laptop/michailermakow.jpg    1x,
+										./images/team/michailermakow/laptop/michailermakow@2x.jpg 2x,
+										./images/team/michailermakow/laptop/michailermakow@3x.jpg 3x
+									"
+									type="image/webp"
+									media="(min-width: 1170px)"
 								/>
 								<img
 									class="team-foto"
 									srcset="
 										./images/team/michailermakow/mobile/michailermakowjpg.jpg    1x,
-										./images/team/michailermakow/mobile/michailermakowjpg@2x.jpg 2x,
-										./images/team/michailermakow/mobile/michailermakowjpg@3x.jpg 3x,
-
+										./images/team/michailermakow/mobile/michailermakowjpg@2x.jpg 2x
 									"
-									src="./images/team/michailermakow/mobile/michailermakowjpg.jpg, 
-									./images/team/michailermakow/tablet/michailermakow.jpg"
-									alt="Фотография сотрудника Игоря Демьяненко"
-									aria-label="Фотография сотрудника Игоря Демьяненко"
+									src="./images/team/michailermakow/mobile/michailermakowjpg.jpg"
+									alt="Фотография сотрудника Михаила Ермакова"
+									aria-label="Фотография сотрудника Михаила Ермакова"
 									width="450"
 								/>
 							</picture>
@@ -463,28 +572,28 @@
 							<p class="team-profession">UI Designer</p>
 							<ul class="links list">
 								<li class="item-links">
-									<a href="https://instagram.com/" class="social-links">
+									<a href="https://instagram.com/" class="social-links" aria-label="Ссылка инстаграмм">
 										<svg class="instagram">
 											<use href="./images/sprite.svg#icon-instagram"></use>
 										</svg>
 									</a>
 								</li>
 								<li class="item-links">
-									<a href="https://twitter.com/" class="social-links">
+									<a href="https://twitter.com/" class="social-links" aria-label="Ссылка твиттер">
 										<svg class="twitter">
 											<use href="./images/sprite.svg#icon-twitter"></use>
 										</svg>
 									</a>
 								</li>
 								<li class="item-links">
-									<a href="https://facebook.com/" class="social-links">
+									<a href="https://facebook.com/" class="social-links" aria-label="Ссылка фейсбук">
 										<svg class="facebook">
 											<use href="./images/sprite.svg#icon-facebook"></use>
 										</svg>
 									</a>
 								</li>
 								<li class="item-links">
-									<a href="https://linkedin.com/" class="social-links">
+									<a href="https://linkedin.com/" class="social-links" aria-label="Ссылка линкедин">
 										<svg class="linkedin">
 											<use href="./images/sprite.svg#icon-linkedin"></use>
 										</svg>
@@ -502,42 +611,42 @@
 					<h2 class="title-clients">Постоянные клиенты</h2>
 					<ul class="list clients">
 						<li class="item clients">
-							<a class="company" href="">
+							<a class="company" href="" aria-label="Ссылка компании">
 								<svg class="company-1">
 									<use href="./images/sprite.svg#icon-logo-1"></use>
 								</svg>
 							</a>
 						</li>
 						<li class="item clients">
-							<a class="company" href="">
+							<a class="company" href="" aria-label="Ссылка компании">
 								<svg class="company-2">
 									<use href="./images/sprite.svg#icon-logo-2"></use>
 								</svg>
 							</a>
 						</li>
 						<li class="item clients">
-							<a class="company" href="">
+							<a class="company" href="" aria-label="Ссылка компании">
 								<svg class="company-3">
 									<use href="./images/sprite.svg#icon-logo-3"></use>
 								</svg>
 							</a>
 						</li>
 						<li class="item clients">
-							<a class="company" href="">
+							<a class="company" href="" aria-label="Ссылка компании">
 								<svg class="company-4">
 									<use href="./images/sprite.svg#icon-logo-4"></use>
 								</svg>
 							</a>
 						</li>
 						<li class="item clients">
-							<a class="company" href="">
+							<a class="company" href="" aria-label="Ссылка компании">
 								<svg class="company-5">
 									<use href="./images/sprite.svg#icon-logo-5"></use>
 								</svg>
 							</a>
 						</li>
 						<li class="item clients">
-							<a class="company" href="">
+							<a class="company" href="" aria-label="Ссылка компании">
 								<svg class="company-6">
 									<use href="./images/sprite.svg#icon-logo-6"></use>
 								</svg>
@@ -551,14 +660,16 @@
 		<footer class="footer__footer">
 			<div class="container footer">
 				<div class="logo-address">
-					<a href="" class="logo-footer">
+					<a href="" class="logo-footer" aria-label="Главная сраница">
 						<span class="logo-span">Web</span>
 						Studio
 					</a>
 					<address class="full-address">
 						<p class="address">г. Киев, пр-т Леси Украинки, 26</p>
-						<a class="footer-link" href="mailto:info@example.com">info@example.com</a>
-						<a class="footer-link" href="tel:+380991111111">+38 099 111 11 11</a>
+						<a class="footer-link" aria-label="Ссылка отправки почты" href="mailto:info@example.com">
+							info@example.com
+						</a>
+						<a class="footer-link" aria-label="Ссылка что бы позвонить" href="tel:+380991111111">+38 099 111 11 11</a>
 					</address>
 				</div>
 
@@ -567,28 +678,28 @@
 
 					<ul class="links list">
 						<li class="item-links-footer">
-							<a href="https://instagram.com/" class="social-links-footer">
+							<a href="https://instagram.com/" class="social-links-footer" aria-label="Ссылка инстаграмм">
 								<svg class="instagram-footer">
 									<use href="./images/sprite.svg#icon-instagram"></use>
 								</svg>
 							</a>
 						</li>
 						<li class="item-links-footer">
-							<a href="https://twitter.com/" class="social-links-footer">
+							<a href="https://twitter.com/" class="social-links-footer" aria-label="Ссылка твиттер">
 								<svg class="twitter-footer">
 									<use href="./images/sprite.svg#icon-twitter"></use>
 								</svg>
 							</a>
 						</li>
 						<li class="item-links-footer">
-							<a href="https://facebook.com/" class="social-links-footer">
+							<a href="https://facebook.com/" class="social-links-footer" aria-label="Ссылка фейсбук">
 								<svg class="facebook-footer">
 									<use href="./images/sprite.svg#icon-facebook"></use>
 								</svg>
 							</a>
 						</li>
 						<li class="item-links-footer">
-							<a href="https://linkedin.com/" class="social-links-footer">
+							<a href="https://linkedin.com/" class="social-links-footer" aria-label="Ссылка линкедин">
 								<svg class="linkedin-footer">
 									<use href="./images/sprite.svg#icon-linkedin"></use>
 								</svg>
@@ -600,7 +711,10 @@
 				<div class="sign">
 					<b class="attention">Подпишитесь на рассылку</b>
 					<form class="footer-form">
-						<input type="email" class="footer-input" placeholder="E-mail" />
+						<label class="hidden">
+							<input type="email" class="footer-input" placeholder="E-mail" />
+						</label>
+
 						<button type="button" class="button-form">
 							Подписаться
 							<svg class="button icon-send">
@@ -655,13 +769,13 @@
 						</span>
 					</label>
 
-					<button type="button" class="button-close-modal" data-modal-close>
+					<button type="button" class="button-close-modal" aria-label="Закрыть модальное окно" data-modal-close>
 						<svg class="close-modal">
 							<use href="./images/sprite.svg#icon-close-modal"></use>
 						</svg>
 					</button>
 
-					<button type="button" class="button-send-modal">Отправить</button>
+					<button type="button" class="button-send-modal" aria-label="Отправить форму">Отправить</button>
 				</form>
 			</div>
 		</div>

@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Наши проекты: Веб-сайты, Приложения, Дизайн, Маркетинг" />
 		<title>Web Studio</title>
 		<link rel="stylesheet" href="./css/main.min.css" />
 	</head>
@@ -12,7 +13,7 @@
 			<!-- Header -->
 			<div class="container">
 				<nav class="flex-header">
-					<a href="" class="logo-header">
+					<a href="" class="logo-header" aria-label="Главная страница">
 						<span class="logo-nav">Web</span>
 						Studio
 					</a>
@@ -20,7 +21,8 @@
 						type="button"
 						class="button-mobile-menu"
 						aria-expanded="false"
-						aria-controls="navigation"
+						aria-controls="navigations"
+						aria-label="Мобильное меню"
 						data-menu-button
 					>
 						<svg width="40px" height="40px">
@@ -28,20 +30,20 @@
 							<use class="icon-cross" href="./images/sprite.svg#icon-cross"></use>
 						</svg>
 					</button>
-					<div class="navigation" data-menu>
+					<div class="navigation" id="navigations" data-menu>
 						<ul class="site-nav list">
 							<li class="item">
-								<a href="./index.html" class="link">Студия</a>
+								<a href="./index.html" aria-label="Переход на главную" class="link">Студия</a>
 							</li>
 							<li class="item">
-								<a href="./portfolio.html" class="link current">Портфолио</a>
+								<a href="./portfolio.html" aria-label="Переход на портфолио" class="link current">Портфолио</a>
 							</li>
-							<li class="item"><a href="" class="link">Контакты</a></li>
+							<li class="item"><a href="" aria-label="Переход в контакты" class="link">Контакты</a></li>
 						</ul>
 
 						<ul class="auth-nav list">
 							<li class="item">
-								<a href="mailto:info@devstudio.com" class="link">
+								<a href="mailto:info@devstudio.com" class="link" aria-label="Ссылка позвонить">
 									<svg class="e-mail">
 										<use href="./images/sprite.svg#icon-e-mail"></use>
 									</svg>
@@ -49,7 +51,7 @@
 								</a>
 							</li>
 							<li class="item">
-								<a href="tel:+380961111111" class="link">
+								<a href="tel:+380961111111" class="link" aria-label="Выслать почту">
 									<svg class="smartphone">
 										<use href="./images/sprite.svg#icon-kontakt"></use>
 									</svg>
@@ -104,7 +106,7 @@
 											./images/portfolio/technocrack/tablet/technocrack@3x.webp 3x
 										"
 										type="image/webp"
-										media="(min-width: 768px)"
+										media="(max-width: 1169px)"
 									/>
 									<source
 										srcset="
@@ -112,7 +114,24 @@
 											./images/portfolio/technocrack/tablet/technocrack@2x.jpg 2x,
 											./images/portfolio/technocrack/tablet/technocrack@3x.jpg 3x
 										"
-										media="(min-width: 768px)"
+										media="(max-width: 1169px)"
+									/>
+									<source
+										srcset="
+											./images/portfolio/technocrack/laptop/technocrack.webp    1x,
+											./images/portfolio/technocrack/laptop/technocrack@2x.webp 2x,
+											./images/portfolio/technocrack/laptop/technocrack@3x.webp 3x
+										"
+										type="image/webp"
+										media="(min-width: 1170px)"
+									/>
+									<source
+										srcset="
+											./images/portfolio/technocrack/laptop/technocrack.jpg    1x,
+											./images/portfolio/technocrack/laptop/technocrack@2x.jpg 2x,
+											./images/portfolio/technocrack/laptop/technocrack@3x.jpg 3x
+										"
+										media="(min-width: 1170px)"
 									/>
 									<img
 										class="project-img"
@@ -133,8 +152,8 @@
 								</p>
 							</div>
 							<div class="project-content">
-								<h2 class="section headline">Постер New Orlean vs Golden Star</h2>
-								<p class="section-subtitle">Дизайн</p>
+								<h2 class="section headline">Технокряк</h2>
+								<p class="section-subtitle">Веб-сайт</p>
 							</div>
 						</a>
 					</li>
@@ -158,7 +177,7 @@
 											./images/portfolio/poster/tablet/poster@3x.webp 3x
 										"
 										type="image/webp"
-										media="(min-width: 768px)"
+										media="(max-width: 1169px)"
 									/>
 									<source
 										srcset="
@@ -166,7 +185,24 @@
 											./images/portfolio/poster/tablet/poster@2x.jpg 2x,
 											./images/portfolio/poster/tablet/poster@3x.jpg 3x
 										"
-										media="(min-width: 768px)"
+										media="(max-width: 1169px)"
+									/>
+									<source
+										srcset="
+											./images/portfolio/poster/laptop/poster.webp    1x,
+											./images/portfolio/poster/laptop/poster@2x.webp 2x,
+											./images/portfolio/poster/laptop/poster@3x.webp 3x
+										"
+										type="image/webp"
+										media="(min-width: 1170px)"
+									/>
+									<source
+										srcset="
+											./images/portfolio/poster/laptop/poster.jpg    1x,
+											./images/portfolio/poster/laptop/poster@2x.jpg 2x,
+											./images/portfolio/poster/laptop/poster@3x.jpg 3x
+										"
+										media="(min-width: 1170px)"
 									/>
 									<img
 										class="project-img"
@@ -212,7 +248,7 @@
 											./images/portfolio/restaurant/tablet/restaurant@3x.webp 3x
 										"
 										type="image/webp"
-										media="(min-width: 768px)"
+										media="(max-width: 1169px)"
 									/>
 									<source
 										srcset="
@@ -220,7 +256,24 @@
 											./images/portfolio/restaurant/tablet/restaurant@2x.jpg 2x,
 											./images/portfolio/restaurant/tablet/restaurant@3x.jpg 3x
 										"
-										media="(min-width: 768px)"
+										media="(max-width: 1169px)"
+									/>
+									<source
+										srcset="
+											./images/portfolio/restaurant/laptop/restaurant.webp    1x,
+											./images/portfolio/restaurant/laptop/restaurant@2x.webp 2x,
+											./images/portfolio/restaurant/laptop/restaurant@3x.webp 3x
+										"
+										type="image/webp"
+										media="(min-width: 1170px)"
+									/>
+									<source
+										srcset="
+											./images/portfolio/restaurant/laptop/restaurant.jpg    1x,
+											./images/portfolio/restaurant/laptop/restaurant@2x.jpg 2x,
+											./images/portfolio/restaurant/laptop/restaurant@3x.jpg 3x
+										"
+										media="(min-width: 1170px)"
 									/>
 									<img
 										class="project-img"
@@ -266,7 +319,7 @@
 											./images/portfolio/projectprime/tablet/projectprime@3x.webp 3x
 										"
 										type="image/webp"
-										media="(min-width: 768px)"
+										media="(max-width: 1169px)"
 									/>
 									<source
 										srcset="
@@ -274,7 +327,24 @@
 											./images/portfolio/projectprime/tablet/projectprime@2x.jpg 2x,
 											./images/portfolio/projectprime/tablet/projectprime@3x.jpg 3x
 										"
-										media="(min-width: 768px)"
+										media="(max-width: 1169px)"
+									/>
+									<source
+										srcset="
+											./images/portfolio/projectprime/laptop/projectprime.webp    1x,
+											./images/portfolio/projectprime/laptop/projectprime@2x.webp 2x,
+											./images/portfolio/projectprime/laptop/projectprime@3x.webp 3x
+										"
+										type="image/webp"
+										media="(min-width: 1170px)"
+									/>
+									<source
+										srcset="
+											./images/portfolio/projectprime/laptop/projectprime.jpg    1x,
+											./images/portfolio/projectprime/laptop/projectprime@2x.jpg 2x,
+											./images/portfolio/projectprime/laptop/projectprime@3x.jpg 3x
+										"
+										media="(min-width: 1170px)"
 									/>
 									<img
 										class="project-img"
@@ -320,7 +390,7 @@
 											./images/portfolio/projectboxes/tablet/projectboxes@3x.webp 3x
 										"
 										type="image/webp"
-										media="(min-width: 768px)"
+										media="(max-width: 1169px)"
 									/>
 									<source
 										srcset="
@@ -328,7 +398,24 @@
 											./images/portfolio/projectboxes/tablet/projectboxes@2x.jpg 2x,
 											./images/portfolio/projectboxes/tablet/projectboxes@3x.jpg 3x
 										"
-										media="(min-width: 768px)"
+										media="(max-width: 1169px)"
+									/>
+									<source
+										srcset="
+											./images/portfolio/projectboxes/laptop/projectboxes.webp    1x,
+											./images/portfolio/projectboxes/laptop/projectboxes@2x.webp 2x,
+											./images/portfolio/projectboxes/laptop/projectboxes@3x.webp 3x
+										"
+										type="image/webp"
+										media="(min-width: 1170px)"
+									/>
+									<source
+										srcset="
+											./images/portfolio/projectboxes/laptop/projectboxes.jpg    1x,
+											./images/portfolio/projectboxes/laptop/projectboxes@2x.jpg 2x,
+											./images/portfolio/projectboxes/laptop/projectboxes@3x.jpg 3x
+										"
+										media="(min-width: 1170px)"
 									/>
 									<img
 										class="project-img"
@@ -374,7 +461,7 @@
 											./images/portfolio/inspirationhasnoborders/tablet/inspirationhasnoborders@3x.webp 3x
 										"
 										type="image/webp"
-										media="(min-width: 768px)"
+										media="(max-width: 1169px)"
 									/>
 									<source
 										srcset="
@@ -382,7 +469,24 @@
 											./images/portfolio/inspirationhasnoborders/tablet/inspirationhasnoborders@2x.jpg 2x,
 											./images/portfolio/inspirationhasnoborders/tablet/inspirationhasnoborders@3x.jpg 3x
 										"
-										media="(min-width: 768px)"
+										media="(max-width: 1169px)"
+									/>
+									<source
+										srcset="
+											./images/portfolio/inspirationhasnoborders/laptop/inspirationhasnoborders.webp    1x,
+											./images/portfolio/inspirationhasnoborders/laptop/inspirationhasnoborders@2x.webp 2x,
+											./images/portfolio/inspirationhasnoborders/laptop/inspirationhasnoborders@3x.webp 3x
+										"
+										type="image/webp"
+										media="(min-width: 1170px)"
+									/>
+									<source
+										srcset="
+											./images/portfolio/inspirationhasnoborders/laptop/inspirationhasnoborders.jpg    1x,
+											./images/portfolio/inspirationhasnoborders/laptop/inspirationhasnoborders@2x.jpg 2x,
+											./images/portfolio/inspirationhasnoborders/laptop/inspirationhasnoborders@3x.jpg 3x
+										"
+										media="(min-width: 1170px)"
 									/>
 									<img
 										class="project-img"
@@ -428,7 +532,7 @@
 											./images/portfolio/limitededition/tablet/limitededition@3x.webp 3x
 										"
 										type="image/webp"
-										media="(min-width: 768px)"
+										media="(max-width: 1169px)"
 									/>
 									<source
 										srcset="
@@ -436,7 +540,24 @@
 											./images/portfolio/limitededition/tablet/limitededition@2x.jpg 2x,
 											./images/portfolio/limitededition/tablet/limitededition@3x.jpg 3x
 										"
-										media="(min-width: 768px)"
+										media="(max-width: 1169px)"
+									/>
+									<source
+										srcset="
+											./images/portfolio/limitededition/laptop/limitededition.webp    1x,
+											./images/portfolio/limitededition/laptop/limitededition@2x.webp 2x,
+											./images/portfolio/limitededition/laptop/limitededition@3x.webp 3x
+										"
+										type="image/webp"
+										media="(min-width: 1170px)"
+									/>
+									<source
+										srcset="
+											./images/portfolio/limitededition/laptop/limitededition.jpg    1x,
+											./images/portfolio/limitededition/laptop/limitededition@2x.jpg 2x,
+											./images/portfolio/limitededition/laptop/limitededition@3x.jpg 3x
+										"
+										media="(min-width: 1170px)"
 									/>
 									<img
 										class="project-img"
@@ -482,7 +603,7 @@
 											./images/portfolio/projectlab/tablet/projectlab@3x.webp 3x
 										"
 										type="image/webp"
-										media="(min-width: 768px)"
+										media="(max-width: 1169px)"
 									/>
 									<source
 										srcset="
@@ -490,7 +611,24 @@
 											./images/portfolio/projectlab/tablet/projectlab@2x.jpg 2x,
 											./images/portfolio/projectlab/tablet/projectlab@3x.jpg 3x
 										"
-										media="(min-width: 768px)"
+										media="(max-width: 1169px)"
+									/>
+									<source
+										srcset="
+											./images/portfolio/projectlab/laptop/projectlab.webp    1x,
+											./images/portfolio/projectlab/laptop/projectlab@2x.webp 2x,
+											./images/portfolio/projectlab/laptop/projectlab@3x.webp 3x
+										"
+										type="image/webp"
+										media="(min-width: 1170px)"
+									/>
+									<source
+										srcset="
+											./images/portfolio/projectlab/laptop/projectlab.jpg    1x,
+											./images/portfolio/projectlab/laptop/projectlab@2x.jpg 2x,
+											./images/portfolio/projectlab/laptop/projectlab@3x.jpg 3x
+										"
+										media="(min-width: 1170px)"
 									/>
 									<img
 										class="project-img"
@@ -536,7 +674,7 @@
 											./images/portfolio/growingbusiness/tablet/growingbusiness@3x.webp 3x
 										"
 										type="image/webp"
-										media="(min-width: 768px)"
+										media="(max-width: 1169px)"
 									/>
 									<source
 										srcset="
@@ -544,7 +682,24 @@
 											./images/portfolio/growingbusiness/tablet/growingbusiness@2x.jpg 2x,
 											./images/portfolio/growingbusiness/tablet/growingbusiness@3x.jpg 3x
 										"
-										media="(min-width: 768px)"
+										media="(max-width: 1169px)"
+									/>
+									<source
+										srcset="
+											./images/portfolio/growingbusiness/laptop/growingbusiness.webp    1x,
+											./images/portfolio/growingbusiness/laptop/growingbusiness@2x.webp 2x,
+											./images/portfolio/growingbusiness/laptop/growingbusiness@3x.webp 3x
+										"
+										type="image/webp"
+										media="(min-width: 1170px)"
+									/>
+									<source
+										srcset="
+											./images/portfolio/growingbusiness/laptop/growingbusiness.jpg    1x,
+											./images/portfolio/growingbusiness/laptop/growingbusiness@2x.jpg 2x,
+											./images/portfolio/growingbusiness/laptop/growingbusiness@3x.jpg 3x
+										"
+										media="(min-width: 1170px)"
 									/>
 									<img
 										class="project-img"
@@ -577,14 +732,16 @@
 		<footer class="footer__footer">
 			<div class="container footer">
 				<div class="logo-address">
-					<a href="" class="logo-footer">
+					<a href="" class="logo-footer" aria-label="Главная сраница">
 						<span class="logo-span">Web</span>
 						Studio
 					</a>
 					<address class="full-address">
 						<p class="address">г. Киев, пр-т Леси Украинки, 26</p>
-						<a class="footer-link" href="mailto:info@example.com">info@example.com</a>
-						<a class="footer-link" href="tel:+380991111111">+38 099 111 11 11</a>
+						<a class="footer-link" aria-label="Ссылка отправки почты" href="mailto:info@example.com">
+							info@example.com
+						</a>
+						<a class="footer-link" aria-label="Ссылка что бы позвонить" href="tel:+380991111111">+38 099 111 11 11</a>
 					</address>
 				</div>
 
@@ -593,28 +750,28 @@
 
 					<ul class="links list">
 						<li class="item-links-footer">
-							<a href="https://instagram.com/" class="social-links-footer">
+							<a href="https://instagram.com/" class="social-links-footer" aria-label="Ссылка инстаграмм">
 								<svg class="instagram-footer">
 									<use href="./images/sprite.svg#icon-instagram"></use>
 								</svg>
 							</a>
 						</li>
 						<li class="item-links-footer">
-							<a href="https://twitter.com/" class="social-links-footer">
+							<a href="https://twitter.com/" class="social-links-footer" aria-label="Ссылка твиттер">
 								<svg class="twitter-footer">
 									<use href="./images/sprite.svg#icon-twitter"></use>
 								</svg>
 							</a>
 						</li>
 						<li class="item-links-footer">
-							<a href="https://facebook.com/" class="social-links-footer">
+							<a href="https://facebook.com/" class="social-links-footer" aria-label="Ссылка фейсбук">
 								<svg class="facebook-footer">
 									<use href="./images/sprite.svg#icon-facebook"></use>
 								</svg>
 							</a>
 						</li>
 						<li class="item-links-footer">
-							<a href="https://linkedin.com/" class="social-links-footer">
+							<a href="https://linkedin.com/" class="social-links-footer" aria-label="Ссылка линкедин">
 								<svg class="linkedin-footer">
 									<use href="./images/sprite.svg#icon-linkedin"></use>
 								</svg>
@@ -626,7 +783,10 @@
 				<div class="sign">
 					<b class="attention">Подпишитесь на рассылку</b>
 					<form class="footer-form">
-						<input type="email" class="footer-input" placeholder="E-mail" />
+						<label class="hidden">
+							<input type="email" class="footer-input" placeholder="E-mail" />
+						</label>
+
 						<button type="button" class="button-form">
 							Подписаться
 							<svg class="button icon-send">
