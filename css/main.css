@@ -673,38 +673,38 @@ a {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../../../images/header/mobileheader/mobileheader.jpg");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../../../images/header/mobileheader/mobileheader.jpg");
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../../../images/header/mobileheader/mobileheaderwebp.webp");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../../../images/header/mobileheader/mobileheaderwebp.webp");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../../../images/header/mobileheader/mobileheader.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../../images/header/mobileheader/mobileheader.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../../../images/header/mobileheader/mobileheaderwebp.webp);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../../images/header/mobileheader/mobileheaderwebp.webp);
   }
 }
 
 @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
   .section.service {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../../../images/header/mobileheader/mobileheader@2x.jpg");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../../../images/header/mobileheader/mobileheader@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../../../images/header/mobileheader/mobileheader@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../../images/header/mobileheader/mobileheader@2x.jpg);
   }
 }
 
 @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
   .section.service {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../../../images/header/mobileheader/mobileheader@2xwebp.webp");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../../../images/header/mobileheader/mobileheader@2xwebp.webp");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../../../images/header/mobileheader/mobileheader@2xwebp.webp);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../../images/header/mobileheader/mobileheader@2xwebp.webp);
   }
 }
 
 @media screen and (max-width: 767px) and (min-device-pixel-ratio: 3), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 3), screen and (max-width: 767px) and (min-resolution: 288dpi), screen and (max-width: 767px) and (min-resolution: 3dppx) {
   .section.service {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../../../images/header/mobileheader/mobileheader@3x.jpg");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../../../images/header/mobileheader/mobileheader@3x.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../../../images/header/mobileheader/mobileheader@3x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../../images/header/mobileheader/mobileheader@3x.jpg);
   }
 }
 
 @media screen and (max-width: 767px) and (min-device-pixel-ratio: 3), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 3), screen and (max-width: 767px) and (min-resolution: 288dpi), screen and (max-width: 767px) and (min-resolution: 3dppx) {
   .section.service {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../../../images/header/mobileheader/mobileheader@3xwebp.webp");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../../../images/header/mobileheader/mobileheader@3xwebp.webp");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../../../images/header/mobileheader/mobileheader@3xwebp.webp);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../../images/header/mobileheader/mobileheader@3xwebp.webp);
   }
 }
 
@@ -719,38 +719,38 @@ a {
 
 @media screen and (min-width: 767px) and (max-width: 1169px) and (min-device-pixel-ratio: 1), screen and (min-width: 767px) and (max-width: 1169px) and (-webkit-min-device-pixel-ratio: 1), screen and (min-width: 767px) and (max-width: 1169px) and (min-resolution: 96dpi), screen and (min-width: 767px) and (max-width: 1169px) and (min-resolution: 1dppx) {
   .section.service {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../../../images/header/tabletheader/tabletheader.jpg");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../../../images/header/tabletheader/tabletheader.jpg");
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../../../images/header/tabletheader/tabletheaderwebp.webp");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../../../images/header/tabletheader/tabletheaderwebp.webp");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../../../images/header/tabletheader/tabletheader.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../../images/header/tabletheader/tabletheader.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../../../images/header/tabletheader/tabletheaderwebp.webp);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../../images/header/tabletheader/tabletheaderwebp.webp);
   }
 }
 
 @media screen and (min-width: 767px) and (max-width: 1169px) and (min-device-pixel-ratio: 2), screen and (min-width: 767px) and (max-width: 1169px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 767px) and (max-width: 1169px) and (min-resolution: 192dpi), screen and (min-width: 767px) and (max-width: 1169px) and (min-resolution: 2dppx) {
   .section.service {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../../../images/header/tabletheader/tabletheader@2x.jpg");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../../../images/header/tabletheader/tabletheader@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../../../images/header/tabletheader/tabletheader@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../../images/header/tabletheader/tabletheader@2x.jpg);
   }
 }
 
 @media screen and (min-width: 767px) and (max-width: 1169px) and (min-device-pixel-ratio: 2), screen and (min-width: 767px) and (max-width: 1169px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 767px) and (max-width: 1169px) and (min-resolution: 192dpi), screen and (min-width: 767px) and (max-width: 1169px) and (min-resolution: 2dppx) {
   .section.service {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../../../images/header/tabletheader/tabletheaderwebp@2x.webp");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../../../images/header/tabletheader/tabletheaderwebp@2x.webp");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../../../images/header/tabletheader/tabletheaderwebp@2x.webp);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../../images/header/tabletheader/tabletheaderwebp@2x.webp);
   }
 }
 
 @media screen and (min-width: 767px) and (max-width: 1169px) and (min-device-pixel-ratio: 3), screen and (min-width: 767px) and (max-width: 1169px) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 767px) and (max-width: 1169px) and (min-resolution: 288dpi), screen and (min-width: 767px) and (max-width: 1169px) and (min-resolution: 3dppx) {
   .section.service {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../../../images/header/tabletheader/tabletheader@3x.jpg");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../../../images/header/tabletheader/tabletheader@3x.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../../../images/header/tabletheader/tabletheader@3x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../../images/header/tabletheader/tabletheader@3x.jpg);
   }
 }
 
 @media screen and (min-width: 767px) and (max-width: 1169px) and (min-device-pixel-ratio: 3), screen and (min-width: 767px) and (max-width: 1169px) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 767px) and (max-width: 1169px) and (min-resolution: 288dpi), screen and (min-width: 767px) and (max-width: 1169px) and (min-resolution: 3dppx) {
   .section.service {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../../../images/header/tabletheader/tabletheaderwebp@3x.webp");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../../../images/header/tabletheader/tabletheaderwebp@3x.webp");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../../../images/header/tabletheader/tabletheaderwebp@3x.webp);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../../images/header/tabletheader/tabletheaderwebp@3x.webp);
   }
 }
 
@@ -766,38 +766,38 @@ a {
 
 @media screen and (min-width: 1170px) and (min-device-pixel-ratio: 1), screen and (min-width: 1170px) and (-webkit-min-device-pixel-ratio: 1), screen and (min-width: 1170px) and (min-resolution: 96dpi), screen and (min-width: 1170px) and (min-resolution: 1dppx) {
   .section.service {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../../../images/header/laptopheader/laptopheader.jpg");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../../../images/header/laptopheader/laptopheader.jpg");
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../../../images/header/laptopheader/laptopheaderwebp.webp");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../../../images/header/laptopheader/laptopheaderwebp.webp");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../../../images/header/laptopheader/laptopheader.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../../images/header/laptopheader/laptopheader.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../../../images/header/laptopheader/laptopheaderwebp.webp);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../../images/header/laptopheader/laptopheaderwebp.webp);
   }
 }
 
 @media screen and (min-width: 1170px) and (min-device-pixel-ratio: 2), screen and (min-width: 1170px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1170px) and (min-resolution: 192dpi), screen and (min-width: 1170px) and (min-resolution: 2dppx) {
   .section.service {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../../../images/header/laptopheader/laptopheader@2x.jpg");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../../../images/header/laptopheader/laptopheader@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../../../images/header/laptopheader/laptopheader@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../../images/header/laptopheader/laptopheader@2x.jpg);
   }
 }
 
 @media screen and (min-width: 1170px) and (min-device-pixel-ratio: 2), screen and (min-width: 1170px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1170px) and (min-resolution: 192dpi), screen and (min-width: 1170px) and (min-resolution: 2dppx) {
   .section.service {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../../../images/header/laptopheader/laptopheaderwebp@2x.webp");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../../../images/header/laptopheader/laptopheaderwebp@2x.webp");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../../../images/header/laptopheader/laptopheaderwebp@2x.webp);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../../images/header/laptopheader/laptopheaderwebp@2x.webp);
   }
 }
 
 @media screen and (min-width: 1170px) and (min-device-pixel-ratio: 3), screen and (min-width: 1170px) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 1170px) and (min-resolution: 288dpi), screen and (min-width: 1170px) and (min-resolution: 3dppx) {
   .section.service {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../../../images/header/laptopheader/laptopheader@3x.jpg");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../../../images/header/laptopheader/laptopheader@3x.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../../../images/header/laptopheader/laptopheader@3x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../../images/header/laptopheader/laptopheader@3x.jpg);
   }
 }
 
 @media screen and (min-width: 1170px) and (min-device-pixel-ratio: 3), screen and (min-width: 1170px) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 1170px) and (min-resolution: 288dpi), screen and (min-width: 1170px) and (min-resolution: 3dppx) {
   .section.service {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../../../images/header/laptopheader/laptopheaderwebp@3x.webp");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../../../images/header/laptopheader/laptopheaderwebp@3x.webp");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../../../images/header/laptopheader/laptopheaderwebp@3x.webp);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../../images/header/laptopheader/laptopheaderwebp@3x.webp);
   }
 }
 
