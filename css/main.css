@@ -1832,6 +1832,12 @@ a {
   }
 }
 
+@media screen and (min-width: 1169px) {
+  .list.button {
+    padding-top: 94px;
+  }
+}
+
 .list.button .button.item {
   margin-right: 8px;
   margin-bottom: 15px;
@@ -1877,13 +1883,13 @@ a {
 }
 
 .section.list.project {
-  padding-top: 40px;
-  padding-bottom: 60px;
+  margin-top: 40px;
+  margin-bottom: 60px;
 }
 
 @media screen and (min-width: 768px) {
   .section.list.project {
-    padding-top: 30px;
+    margin-top: 30px;
   }
 }
 
@@ -1932,6 +1938,13 @@ a {
   }
   .section.list.project .item-projects:nth-last-child(-n + 3) {
     margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1169px) {
+  .section.list.project {
+    margin-top: 50px;
+    margin-bottom: 94px;
   }
 }
 
