@@ -1707,9 +1707,11 @@ a {
   padding-bottom: 10px;
 }
 
-.form-field:hover .form-field-title,
-.form-field:focus .form-field-title {
-  color: #2196f3;
+@media screen and (max-width: 767px) {
+  .form-field:hover .form-field-title,
+  .form-field:focus .form-field-title {
+    color: #2196f3;
+  }
 }
 
 .form-field:nth-last-child(4) {
