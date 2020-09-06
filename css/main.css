@@ -707,7 +707,7 @@ a {
   text-align: center;
   padding-top: 118px;
   padding-bottom: 118px;
-  width: 100%;
+  max-width: 480px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -828,12 +828,14 @@ a {
   }
 }
 
-.section.service {
-  max-width: 1600px;
-  padding: 200px 0;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+@media screen and (min-width: 1170px) {
+  .section.service {
+    max-width: 1600px;
+    padding: 200px 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
 }
 
 @media screen and (min-width: 1170px) and (min-device-pixel-ratio: 1), screen and (min-width: 1170px) and (-webkit-min-device-pixel-ratio: 1), screen and (min-width: 1170px) and (min-resolution: 96dpi), screen and (min-width: 1170px) and (min-resolution: 1dppx) {

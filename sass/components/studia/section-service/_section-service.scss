@@ -2,7 +2,7 @@
 	text-align: center;
 	padding-top: 118px;
 	padding-bottom: 118px;
-	width: 100%;
+	max-width: 480px;
 	margin-right: auto;
 	margin-left: auto;
 	@media screen and (max-width: 767px) {
@@ -128,12 +128,12 @@
 }
 
 .section.service {
-	max-width: 1600px;
-	padding: 200px 0;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
 	@media screen and (min-width: 1170px) {
+		max-width: 1600px;
+		padding: 200px 0;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
 		@media screen and (min-device-pixel-ratio: 1),
 			screen and (min-resolution: 96dpi),
 			screen and (min-resolution: 1dppx) {
