@@ -925,7 +925,6 @@ a {
   font-size: 14px;
   line-height: 1.2;
   text-transform: uppercase;
-  text-align: center;
 }
 
 .item-features .section-content {
@@ -1704,6 +1703,11 @@ a {
   margin-right: auto;
   width: 100%;
   padding-bottom: 10px;
+}
+
+.form-field:hover .form-field-title,
+.form-field:focus .form-field-title {
+  color: #2196f3;
 }
 
 .form-field:nth-last-child(4) {

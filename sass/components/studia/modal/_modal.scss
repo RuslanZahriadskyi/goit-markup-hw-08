@@ -93,6 +93,11 @@
 
 	padding-bottom: 10px;
 
+	&:hover .form-field-title,
+	&:focus .form-field-title {
+		color: $acent-color;
+	}
+
 	&:nth-last-child(4) {
 		padding-bottom: 20px;
 	}
